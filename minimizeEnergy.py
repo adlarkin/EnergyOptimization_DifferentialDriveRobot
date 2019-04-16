@@ -252,6 +252,7 @@ distTolerance = epsilon * (10 ** -7)
 deltaTauMax = 1.5    # how much the torque can change per second
 initState = [0, 0, (np.pi)/2, 0, 0, 0, 0]  # [x,y,theta,v,omega,leftTorque,rightTorque]
 endLocation = [initState[0], initState[1] + epsilon]
+# endLocation = [initState[0] + (.1*epsilon*np.cos(np.pi/4)), initState[1] + (epsilon*np.sin(np.pi/4))]
 n = 30
 randomTries = 30
 timeStep = .01
